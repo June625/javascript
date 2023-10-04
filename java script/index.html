@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shop Page</title>
+<style>
+    html, body{height: 100%;}
+    header {border: 1px solid gray;}
+    nav{float: left;width: 30%;height: 70%;border: 1px solid gray;}
+    section{float: right;width: 69%;height: 70%;border: 1px solid gray;}
+    footer{clear: both;border: 1px solid gray;}
+</style>    
+</head>
+<body>
+    <header><h2>IT SHOP</h2>
+        <img src="computer.jpg.jpg" width="100" height="100">
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>My page</li>
+            <li>my cart</li>
+        </ul>
+    </nav>
+<section>
+<h4>카테고리</h4>
+<ul>
+<li><a target="iframe" href="monitor.html">모니터</a></li>
+<li><a target="iframe"href="notebook.html">노트북</a></li>
+<li><a target="iframe"href="tablet pc.html">태블릿pc</a></li>
+</ul>
+</section>
+<footer>
+    <h3>로그인</h3>
+    <form action="input.jsp" method="post">
+        ID : <input type="text" name="id" 
+        placeholder="아이디를 입력해주세요."><br/>
+        password : <input type="password" name="password" 
+        placeholder="비밀번호를 입력해주세요."><br/>
+        <p>
+        <input value="login" type="submit" name="login">
+        </p>
+    </form>
+</footer>
+</body>
+</html>
