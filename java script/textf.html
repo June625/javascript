@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>고객의 소리</h2>
+    <form name="input" action="get feedback.jsp" method="get">
+         아이디: <input type="text" name="name"> <br>
+         구매번호:<input type="text" name="number" size="10"> <br>
+         패스워드:<input type="password" name="pass"> <br>
+         제품을 평가해 주세요.<br />
+<textarea name="feedback" rows="5" cols="50"></textarea>
+<input type="submit" value="제출">
+<h2>선호도 조사입니다</h2>
+
+    성별:
+     <input type="radio" name="gender" value="male">남성
+     <input type="radio" name="gender" value="female">여성<br>
+     과일 선택:
+     <input type="checkbox" name="fruit" value="apple" checked>사과
+     <input type="checkbox" name="fruit" value="orange">오렌지
+     <input type="checkbox" name="fruit" value="pheach">복숭아
+    </br>
+    <input type="submit" value="제출">
+    <input type="submit" value="초기화">
+    <form action="">
+        <select name="cars">
+            <option value="genesis">제네시스</option>
+            <option value="hundai"selected>현대 자동차</option>
+            <option value="kia">기아</option>
+        </select>
+    <p>선호하는 브라우저를 선택해주세요</p>
+    <form action="process.jsp">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="구글 크롬">
+            <option value="네이버">
+            <option value="사파리">
+            <option value="야후">
+        </datalist>
+        <input type="submit"> 
+        <fieldset>
+            <legend>인적사항입력</legend>
+            이름:       <input type="text"><br>
+            전화번호:   <input type="text"><br>
+            주소:       <input type="text">
+        </fieldset>   
+</form>
+<input type="button" value="눌러보세요" onclick="alert('많이 놀랬죠?')">
+</br>
+<button><img src="youtube.png" width="50" height="50"></button>
+</body>
+</html>
