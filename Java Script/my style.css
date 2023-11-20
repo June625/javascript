@@ -1,0 +1,19 @@
+h1{background-color: blue;
+    color: white; text-align: center;
+text-shadow: 5px 5px 5px #000000;}
+h3{font-family: 'Times New Roman','Times New Roman', Times, serif;
+font-weight: bold;}
+p{color: aqua;}
+#ll{background-color: beige;
+color: blueviolet;}
+.large{font-size: large;}
+italic1{font-style: italic;}
+p> strong {color: red;}
+body em{color: brown;}
+a:hover {background-color: bisque; 
+color: black; text-decoration: none;}
+a:link{color: black;}
+a:visited{ text-decoration: none; color: green;}
+h3:hover{background-color: olive; color: white;}
+p::before{content:-- ; color: sandybrown;
+font-weight: bold;}
