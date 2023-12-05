@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 연습</title>
+    <script>
+        function get(){
+            let val=document.getElementById("ex").innerHTML;
+        }
+        function set(v){
+            document.getElementById("ex").innerHTML=v;
+        }
+    </script>
+     <p id="p1">This is a paragraph</p>
+     <script>
+         function changeStyle(){
+             document.getElementById("p1").style.color="red";
+             document.getElementById("p1").style.fontFamily="Century Schoolbook";
+             document.getElementById("p1").style.fontStyle="italic";
+         }
+     </script>
+     <input type="button" onclick="changeStyle()" value="눌러보세요" />
+     <h3 id="heading">이것은 헤딩입니다.</h3>
+     <input type="button" value="요소숨김"
+     onclick="document.getElementById('heading').style.visibility='hidden'" />
+     <input type="button" value="요소표시"
+     onclick="document.getElementById('heading').style.visibility='visible'" />
+    
+</head>
+<body>
+    <div id="ex">여기가 div로 선언되었습니다</div>
+    <a href="#" onclick="get()">div 요소 내용 출력하기</a></br>
+    <a href="#" onclick="set('변경되었습니다')">div 요소 내용 변경하기</a>
+    
+<!--5번째-->
+<img id="image" src="pome.png" width="120" height="100">
+<script>
+    function ChangeImage(){
+        document.getElementById("image").src="poodle.png";
+    }
+</script>
+<input type="button" onclick="ChangeImage()" value="눌러보세요" />
+</body>
+</html>

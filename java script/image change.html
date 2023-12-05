@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 자동 변경</title>
+</head>
+<body>
+    <img src="산타클로스.jpg" id="image">
+    <script>
+        let num =0;
+        function show(){
+            if(num==0){
+                document.getElementById("image").src="눈사람.jpg";
+                num=1;
+            }else if(num==1){
+                document.getElementById("image").src="크리스마스트리.jpg";
+                num=2;
+            }else if(num==2){
+                document.getElementById("image").src="크리스마스구슬.jpg";
+                num=3;
+            } else if(num==3){document.getElementById("image").src="크리스마스 선물.jpg";
+                num=4;
+        } else if(num==4){document.getElementById("image").src="크리스마스 거리 장식.jpg";
+                num=5;
+        } else{
+                document.getElementById("image").src ="산타클로스.jpg";
+                num=0;
+            }
+             
+            setTimeout('show()',1000);
+        }
+        show();
+    </script>
+   
+</body>
+</html>
