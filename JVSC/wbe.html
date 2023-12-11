@@ -51,6 +51,14 @@
         <li><a href="shopping chart.html">주문 목록</a></li>
     </ul>
  </section>
- <footer>개인정보 방침정보</footer>
+ <footer><h2 id="go"></h2>
+ <script>
+ let admin =["Lee","Kim","Anna"]
+ person= prompt("아이디를 입력하세요","");
+ document.getElementById("go").innerHTML="로그인 실패";
+ for(i=0; i<admin.length; i++){if(person==admin[i])
+ {document.getElementById("go").innerHTML="로그인 성공"; break;}}
+ </script>
+ </footer>
 </body>
 </html>
